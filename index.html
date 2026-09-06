@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wah Veer G Wah — Digital Menu | Proud to be a Vegetarian</title>
+<meta name="description" content="Wah Veer G Wah — 100% pure vegetarian Indian, Chinese &amp; BBQ menu. Jail Road, New Delhi. View the full digital menu, order now, or write us a Google review." />
+<link rel="icon" href="assets/logo.png" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ================= ICON SPRITE (original line icons, no third-party art) ================= -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="icon-flame" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M12 2c1 3-2.5 4-2.5 7.5a2.5 2.5 0 0 0 5 0c0-1-.5-1.8-.5-1.8s2 1.3 2 4.3a4.5 4.5 0 0 1-9 0C7 7.5 11 6.5 12 2z"/></symbol>
+      <symbol id="icon-cheese" viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4 9l4-5h8l4 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="9.5" cy="13.5" r=".9" fill="currentColor"/><circle cx="14.5" cy="15.5" r=".9" fill="currentColor"/></symbol>
+      <symbol id="icon-drink" viewBox="0 0 24 24"><path d="M7 3h10l-1.3 15a2 2 0 0 1-2 1.8h-3.4a2 2 0 0 1-2-1.8L7 3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><line x1="6.3" y1="8" x2="17.7" y2="8" stroke="currentColor" stroke-width="1.7"/><line x1="9" y1="1.5" x2="9" y2="3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="0.5" x2="12" y2="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="icon-soup" viewBox="0 0 24 24"><path d="M3 11h18a8 8 0 0 1-16 0z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M6 11c0-3 1-4 1-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="9" y1="19" x2="15" y2="19" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+      <symbol id="icon-pasta" viewBox="0 0 24 24"><ellipse cx="12" cy="15" rx="9" ry="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7 15c1-3 3-6 2-10M12 15c1-4 2-7 1-11M17 15c1-3 2-6 1-10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+      <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M5 19c-1-7 3-14 14-14 1 8-4 14-14 14z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M6 18c3-4 6-7 11-11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+      <symbol id="icon-platter" viewBox="0 0 24 24"><ellipse cx="12" cy="17" rx="9" ry="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M6 17V8a2 2 0 1 1 4 0v3M14 17V6M17 17V6a1.5 3 0 0 1 3 0v5a1.5 3 0 0 1-1.5 1.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+      <symbol id="icon-roll" viewBox="0 0 24 24"><path d="M4 12c0-3 4-8 8-8s8 5 8 8-4 8-8 8-8-5-8-8z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4 12h16M8 8.5c1.5 2 1.5 5.5 0 7M16 8.5c-1.5 2-1.5 5.5 0 7" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+      <symbol id="icon-thali" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 3v5.8M12 20.2V15M3 12h5.8M15 12h5.8" fill="none" stroke="currentColor" stroke-width="1.2"/></symbol>
+      <symbol id="icon-pot" viewBox="0 0 24 24"><path d="M4 11h16l-1.4 6.2A2 2 0 0 1 16.6 19H7.4a2 2 0 0 1-2-1.8L4 11z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M2 8.5C4 6 8 5 12 5s8 1 10 3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="2" x2="12" y2="5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="icon-rice" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 0 16 0z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M4 12c0-4.5 3.6-8 8-8s8 3.5 8 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-dasharray="1.5 2.6" stroke-linecap="round"/><line x1="17" y1="2" x2="20.5" y2="7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><line x1="19.5" y1="2" x2="16" y2="7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+      <symbol id="icon-bread" viewBox="0 0 24 24"><path d="M12 4c5 0 8 3.5 8 8 0 4-3.5 7-8 7s-8-3-8-7c0-4.5 3-8 8-8z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 10l1.5 5M12 9l1 6M16 10l-1.5 5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="icon-dessert" viewBox="0 0 24 24"><path d="M4 10h16l-1.6 8.2a2 2 0 0 1-2 1.6H7.6a2 2 0 0 1-2-1.6L4 10z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M4 10a8 3.4 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 10c0-2.5 1-4 3-4s3 1.5 3 4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+      <symbol id="icon-noodle" viewBox="0 0 24 24"><path d="M3.5 11h17a7.5 6 0 0 1-15 0z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M7 11c1.5-2 0-4 1-6M12 11c1.5-2.5 0-5 1-8M16 11c1.5-2 0-4 1-6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="16" y1="17" x2="20" y2="21" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><line x1="18" y1="16" x2="22" y2="20" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+      <symbol id="icon-dumpling" viewBox="0 0 24 24"><path d="M4 12c0-2 3.5-3 8-3s8 1 8 3-3.5 7-8 7-8-5-8-7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M4 12c1.5 1 4.5 1.6 8 1.6s6.5-.6 8-1.6" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+      <symbol id="icon-wok" viewBox="0 0 24 24"><path d="M3 11h18a9 5 0 0 1-18 0z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><line x1="3" y1="11" x2="0.5" y2="8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="21" y1="11" x2="23.5" y2="8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ================= DISCOUNT MARQUEE ================= -->
+  <div id="promo-bar" role="note" aria-label="Current offer">
+    <div class="promo-track">
+      <span class="promo-item" data-cfg="PROMO_TEXT">🎉 Ask our staff about today's specials!</span>
+      <span class="promo-item" data-cfg="PROMO_TEXT">🎉 Ask our staff about today's specials!</span>
+      <span class="promo-item" data-cfg="PROMO_TEXT">🎉 Ask our staff about today's specials!</span>
+      <span class="promo-item" data-cfg="PROMO_TEXT">🎉 Ask our staff about today's specials!</span>
+    </div>
+  </div>
+
+  <!-- ================= INTRO ANIMATION ================= -->
+  <div id="intro" role="dialog" aria-label="Welcome animation, tap to skip">
+    <div class="intro-steam" aria-hidden="true">
+      <span class="steam s1">～</span><span class="steam s2">～</span><span class="steam s3">～</span>
+    </div>
+    <svg class="mascot-svg" viewBox="0 0 200 200" aria-hidden="true">
+      <!-- Original chef mascot illustration, drawn for this project -->
+      <ellipse class="m-shadow" cx="100" cy="182" rx="46" ry="8"/>
+      <g class="m-bounce">
+        <!-- hat -->
+        <g class="m-hat">
+          <path fill="#FFFFFF" stroke="#0B3D32" stroke-width="2.5" d="M68 70c-14 0-22-10-18-22 2-7 9-11 15-9 1-10 10-17 21-17s20 7 21 17c6-2 13 2 15 9 4 12-4 22-18 22z"/>
+          <rect x="66" y="64" width="68" height="14" rx="6" fill="#FFFFFF" stroke="#0B3D32" stroke-width="2.5"/>
+        </g>
+        <!-- head -->
+        <circle cx="100" cy="104" r="34" fill="#F5C99B" stroke="#0B3D32" stroke-width="2.5"/>
+        <!-- ears -->
+        <circle cx="67" cy="106" r="6" fill="#F5C99B" stroke="#0B3D32" stroke-width="2"/>
+        <circle cx="133" cy="106" r="6" fill="#F5C99B" stroke="#0B3D32" stroke-width="2"/>
+        <!-- eyes -->
+        <g class="m-eyes">
+          <circle cx="89" cy="102" r="3.4" fill="#0B3D32"/>
+          <circle cx="112" cy="102" r="3.4" fill="#0B3D32"/>
+        </g>
+        <!-- blush -->
+        <circle cx="82" cy="115" r="5" fill="#C93677" opacity=".25"/>
+        <circle cx="119" cy="115" r="5" fill="#C93677" opacity=".25"/>
+        <!-- moustache (two curled halves) -->
+        <path fill="#6b4226" d="M100 118c-3-5-10-8-16-6-5 1.5-8 5-7 8 4-3 9-4 13-2-4 1-7 4-7 7 0 2 2 3 4 2 4-1.5 9-5 13-9z"/>
+        <path fill="#6b4226" d="M100 118c3-5 10-8 16-6 5 1.5 8 5 7 8-4-3-9-4-13-2 4 1 7 4 7 7 0 2-2 3-4 2-4-1.5-9-5-13-9z"/>
+        <!-- smile -->
+        <path fill="none" stroke="#0B3D32" stroke-width="2.2" stroke-linecap="round" d="M93 124q7 5 14 0"/>
+        <!-- body / coat -->
+        <path fill="#FFFFFF" stroke="#0B3D32" stroke-width="2.5" d="M62 178l4-40c2-12 14-20 34-20s32 8 34 20l4 40z"/>
+        <line x1="100" y1="138" x2="100" y2="178" stroke="#0B3D32" stroke-width="1.5" opacity=".5"/>
+        <circle cx="94" cy="150" r="2" fill="#0B3D32" opacity=".6"/>
+        <circle cx="94" cy="163" r="2" fill="#0B3D32" opacity=".6"/>
+        <circle cx="106" cy="150" r="2" fill="#0B3D32" opacity=".6"/>
+        <circle cx="106" cy="163" r="2" fill="#0B3D32" opacity=".6"/>
+        <!-- bow tie (sits on the collar, below the chin) -->
+        <path fill="#A91F2B" d="M92 138l-9 5v8l9 5v-6c2 1 4 1 6 0v6l9-5v-8l-9-5c-2 2-4 2-6 0z"/>
+        <circle cx="100" cy="142" r="2.6" fill="#7f1620"/>
+        <!-- waving arm -->
+        <g class="m-arm">
+          <path fill="#FFFFFF" stroke="#0B3D32" stroke-width="2.5" stroke-linecap="round" d="M132 138c10-4 18-14 20-26"/>
+          <circle cx="153" cy="110" r="7" fill="#F5C99B" stroke="#0B3D32" stroke-width="2.2"/>
+        </g>
+        <!-- still arm -->
+        <path fill="#FFFFFF" stroke="#0B3D32" stroke-width="2.5" stroke-linecap="round" d="M68 138c-8-2-14-8-16-16"/>
+      </g>
+    </svg>
+    <h1>Welcome to Wah Veer G Wah!</h1>
+    <p>PROUD TO BE A VEGETARIAN</p>
+    <div class="tap-hint">tap anywhere to continue</div>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">
+        <img src="assets/logo.png" alt="Wah Veer G Wah logo" />
+        <span class="brand-text">Wah Veer G Wah<small>Proud to be a Vegetarian</small></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#featured">Popular</a>
+        <a href="#combo-meal">Combos</a>
+        <a href="#reviews">Reviews</a>
+        <a data-cfg-href="INSTAGRAM_URL" href="#" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn-review-mini" data-cfg-href="GOOGLE_REVIEW_URL" href="#" target="_blank" rel="noopener">★ Google Review</a>
+        <a class="icon-btn" data-cfg-href="INSTAGRAM_URL" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1"/></svg>
+        </a>
+        <button class="icon-btn" id="search-btn" aria-label="Search menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="icon-btn hamburger" id="hamburger-btn" aria-label="Open menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div id="search-panel">
+    <input type="search" id="search-input" placeholder="Search the menu — e.g. paneer, chaap, momos..." aria-label="Search menu" />
+  </div>
+
+  <nav id="mobile-nav" aria-label="Mobile">
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#featured">Popular</a>
+    <a href="#combo-meal">Combos</a>
+    <a href="#reviews">Reviews</a>
+    <a data-cfg-href="INSTAGRAM_URL" href="#" target="_blank" rel="noopener">Instagram</a>
+    <a data-cfg-href="GOOGLE_REVIEW_URL" href="#" target="_blank" rel="noopener">Write a Google Review</a>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <img class="hero-logo" src="assets/logo.png" alt="Wah Veer G Wah — 100% Pure Vegetarian" />
+      <h1>WAH VEER G WAH</h1>
+      <p class="tagline">Proud to be a Vegetarian</p>
+      <p class="cuisine">INDIAN &nbsp;|&nbsp; CHINESE &nbsp;|&nbsp; BBQ</p>
+      <p class="blurb">A pure-vegetarian kitchen on Jail Road serving tandoori chaap, kebabs, Indian-Chinese classics and hearty thalis — cooked fresh to order, from breakfast rolls to late-night biryani.</p>
+      <div class="hero-ctas">
+        <a href="#menu" class="btn btn-primary">View Full Menu</a>
+        <a class="btn btn-outline" data-cfg-href="GOOGLE_REVIEW_URL" href="#" target="_blank" rel="noopener">Write a Google Review</a>
+      </div>
+      <div class="trust-line"><span class="stars">★★★★★</span> Loved by our customers</div>
+
+      <div class="collage" aria-hidden="true">
+        <div>🍢</div><div>🫓</div><div>🍛</div><div>🥟</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED ================= -->
+  <section id="featured" class="section featured-strip">
+    <div class="container">
+      <h2 class="section-title">Chef's Selection</h2>
+      <p class="section-sub">Our signature platters and thalis — the best way to try a bit of everything</p>
+      <div id="featured-root"></div>
+    </div>
+  </section>
+
+  <!-- ================= MENU ================= -->
+  <section id="menu" class="section" style="padding-top:20px;">
+    <div class="container">
+      <h2 class="section-title">Full Menu</h2>
+      <p class="section-sub">Every category from our printed menu, organised for easy browsing</p>
+    </div>
+
+    <div class="cat-nav-wrap">
+      <div class="cat-nav" id="cat-nav"></div>
+      <div class="filter-row">
+        <button class="filter-chip active" data-filter="All">All</button>
+        <button class="filter-chip" data-filter="Tandoori">Tandoori</button>
+        <button class="filter-chip" data-filter="Chinese">Chinese</button>
+        <button class="filter-chip" data-filter="Paneer">Paneer</button>
+        <button class="filter-chip" data-filter="Chaap">Chaap</button>
+        <button class="filter-chip" data-filter="Rice">Rice</button>
+        <button class="filter-chip" data-filter="Rolls">Rolls</button>
+        <button class="filter-chip" data-filter="Beverages">Beverages</button>
+        <button class="filter-chip" data-filter="Desserts">Desserts</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="menu-root"></div>
+      <p id="no-results" class="no-results">No dishes match your search. Try a different word or filter.</p>
+      <p class="price-note">All Prices in ₹ · Taxes Included</p>
+    </div>
+  </section>
+
+  <!-- ================= WHY US ================= -->
+  <section class="section" style="padding-top:10px;">
+    <div class="container">
+      <h2 class="section-title">Why Customers Love Us</h2>
+      <div class="why-grid">
+        <div class="why-card"><div class="ic">🌱</div><div class="lbl">Pure Vegetarian</div></div>
+        <div class="why-card"><div class="ic">🔥</div><div class="lbl">Fresh Tandoori</div></div>
+        <div class="why-card"><div class="ic">🥡</div><div class="lbl">Indian &amp; Chinese</div></div>
+        <div class="why-card"><div class="ic">🚴</div><div class="lbl">Home Delivery</div></div>
+        <div class="why-card"><div class="ic">👨‍👩‍👧‍👦</div><div class="lbl">Family Friendly</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GOOGLE REVIEWS ================= -->
+  <section id="reviews" class="section reviews-section">
+    <div class="container">
+      <div class="google-badge" aria-hidden="true">
+        <svg viewBox="0 0 48 48"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.69 28.18A13.98 13.98 0 0 1 10.87 24c0-1.45.25-2.87.82-4.18v-5.7H4.34A21.99 21.99 0 0 0 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/></svg>
+        <span style="font-weight:700; color:var(--forest-dark); font-size:18px;">Google Reviews</span>
+      </div>
+      <h2 class="section-title" style="margin-top:0;">See What Our Customers Say</h2>
+      <div class="reviews-cta-box">
+        <div class="stars">★★★★★</div>
+        <p>We show real, verified reviews straight from Google — good and bad, honestly. Once this site is connected to our Google Business Profile, reviews will appear here automatically. Meanwhile, read them directly on Google or leave your own.</p>
+        <a class="btn btn-primary" data-cfg-href="GOOGLE_REVIEW_URL" href="#" target="_blank" rel="noopener">Write a Google Review</a>
+        <div class="reviews-links">
+          <a data-cfg-href="GOOGLE_REVIEW_URL" href="#" target="_blank" rel="noopener">View all Google Reviews →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INSTAGRAM ================= -->
+  <section class="section instagram-section">
+    <div class="container">
+      <h2 class="section-title">On Instagram</h2>
+      <p class="section-sub">Follow along for new dishes, tandoor moments and behind-the-scenes</p>
+      <div id="ig-root">
+        <div class="ig-gallery" aria-hidden="true">
+          <div>📸</div><div>🔥</div><div>🍢</div><div>🫓</div><div>🍛</div><div>🥟</div>
+        </div>
+      </div>
+      <a class="btn btn-primary" data-cfg-href="INSTAGRAM_URL" href="#" target="_blank" rel="noopener">Follow us on Instagram</a>
+    </div>
+  </section>
+
+  <!-- ================= QR ================= -->
+  <section class="section qr-section">
+    <div class="container">
+      <h2 class="section-title">Scan to View Our Digital Menu</h2>
+      <p class="section-sub">Scan with your phone camera — perfect for tables, counters and the entrance</p>
+      <div class="qr-box"><div id="qrcode"></div></div>
+      <div class="qr-actions">
+        <button class="btn btn-primary" id="qr-download">Download QR (PNG)</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>Wah Veer G Wah</h3>
+        <p>Proud to be a Vegetarian</p>
+        <p>Indian | Chinese | BBQ</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="#menu">View Full Menu</a>
+        <a data-cfg-href="GOOGLE_REVIEW_URL" href="#" target="_blank" rel="noopener">Write a Google Review</a>
+        <a data-cfg-href="INSTAGRAM_URL" href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#reviews">Google Reviews</a>
+      </div>
+      <div class="footer-col">
+        <h4>Visit / Order</h4>
+        <p data-cfg="ADDRESS">Address</p>
+        <p>Call: <span data-cfg="PHONE_1">Phone</span> / <span data-cfg="PHONE_2">Phone</span></p>
+        <p data-cfg="OPENING_HOURS">Hours</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> Wah Veer G Wah — Jail Road Wale. 100% Pure Vegetarian.
+    </div>
+  </footer>
+
+  <script src="assets/qrcode.min.js"></script>
+  <script src="config.js"></script>
+  <script src="menu-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
