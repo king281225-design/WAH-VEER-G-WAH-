@@ -8,6 +8,9 @@ const CONFIG = {
   SUB_BRAND: "Jail Road Wale",
   TAGLINE: "Proud to be a Vegetarian",
   CUISINE: "Indian | Chinese | BBQ",
+  // Logo is embedded directly in index.html as a data URI (see the <img>
+  // tags), so it can never break from a missing file or wrong path. This
+  // LOGO value is kept only for reference / if you build additional pages.
   LOGO: "assets/logo.png",
 
   // Real details printed on the restaurant's own menu:
@@ -20,15 +23,16 @@ const CONFIG = {
   GOOGLE_REVIEW_URL: "https://maps.app.goo.gl/shGi351FQxqvjPkf6",
   GOOGLE_PLACE_ID: "PASTE_REAL_PLACE_ID_HERE",
 
-  // A direct "write a review" deep link, built from the ID embedded in your
-  // Google Maps link (the "!1s0x...:0x..." part of the full maps URL) — this
-  // skips the extra tap of finding the review button on the place page.
-  // This uses a widely-used but UNOFFICIAL Google URL pattern, so please
-  // test it yourself before relying on it: open the link below in a normal
-  // browser tab and confirm it lands directly on the "Rate and review" box.
-  // If it ever stops working, just clear it (set to "") and the site will
-  // automatically fall back to GOOGLE_REVIEW_URL above instead.
-  GOOGLE_WRITE_REVIEW_URL: "https://search.google.com/local/writereview?placeid=0x390d04a10b4a61e7:0xad810c33a759986e",
+  // A direct "write a review" deep link built from the ID embedded in your
+  // Google Maps link. NOTE: this returned a 404 when tested — Google's
+  // officially documented format needs a "ChIJ..."-style Place ID (from
+  // Google's Place ID Finder: https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder),
+  // not the "0x...:0x..." ID pulled from a maps.app.goo.gl link. Left empty
+  // for now, so the review button safely falls back to GOOGLE_REVIEW_URL
+  // above (confirmed working). If you get the real ChIJ Place ID later,
+  // paste a link in this exact format here:
+  // https://search.google.com/local/writereview?placeid=ChIJ...
+  GOOGLE_WRITE_REVIEW_URL: "",
 
   INSTAGRAM_URL: "https://www.instagram.com/wahveergwahofficial",
 
